@@ -1,20 +1,16 @@
 @font-face {
-   
-   
-    font-family: roboto;
-    src: url(../fontes/Roboto-Regular.ttf);
+    font-family: Lato-Regular;
+    src: url('../fonts/Lato-Regular.ttf');
 }
 
-
-*{
+* {
     font-size: 12pt;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #222;
-    font-family: roboto;
-
-} 
+    font-family: Lato-Regular, Verdana, sans-serif;
+}
 
 #interface {
     display: block;
@@ -22,14 +18,13 @@
     height: 100vh;
     padding: 2rem;
     background-color: #fafafa;
-
+    overflow: hidden;
 }
 
 #interface .cabecalho {
     display: block;
     width: 70%;
-    margin: 0 auto 2rem auto;
-
+    margin: 0 auto 2rem auto; /*top, right, bottom, left*/
 }
 
 #interface .cabecalho h2 {
@@ -39,12 +34,42 @@
     font-size: 1.5rem;
 }
 
+#interface main {
+    display: block;
+}
+
 #interface table {
     margin: 0 auto;
-    padding: .5rem;
+    margin-block-end: 5px;
     border-radius: .25rem;
     background-color: #ddd;
-    box-shadow: 0 0 2px rgba(0,0,0,.8);
+    padding: .5rem;
+    box-shadow: 0 0 2px rgba( 0, 0, 0, .8);
+}
+
+#interface table #painel {
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #333;
+    border-radius: .25rem;
+}
+
+#interface table #painel #txt_operadores {
+    display: block;
+    color: #fafafa;
+    text-align: right;
+
+}
+
+#interface table #painel #txt_display {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: none;    
+    color: #fafafa;
+    text-align: right;
 }
 
 #interface table button {
@@ -58,10 +83,19 @@
     font-size: .8rem;
     font-weight: bold;
     color: #7e0a0a;
-
 }
 
 #interface table #bt-plus,
 #interface table #bt-equal {
     height: 102px;
 }
+
+#interface #painel {
+    text-align: right;
+    background-color: #c0c0c0;
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #333;
+}
+ 
